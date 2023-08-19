@@ -5,8 +5,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
+	<caption>List of all transactions</caption>
 	<table class="table">
-  <thead class="table table-bordered table-dark">
+		
+  <thead class="table table-bordered table-dark table-responsive table-hover">
     <tr>
       <th scope="col">#</th>
       <th scope="col">From</th>
@@ -14,6 +16,7 @@
       <th scope="col">Amount($)</th>
     </tr>
   </thead>
+		
   <tbody>
     <tr>
       <th scope="row">1</th>
@@ -34,9 +37,9 @@
       <td>2000</td>
     </tr>
 	  </tbody>
-	<tfoot>
+	<tfoot class="table-light">
 	  <tr>
-	  <td colspan="3" style="text-align:right;"><b>Total</b></td>
+	  <td colspan="3" style="text-align:right;" id="total"><b>Total</b></td>
 	  <td ><b>4000</b></td>
 	  </tr>
 	</tfoot>
